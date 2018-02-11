@@ -91,6 +91,14 @@ body > * {
     background-color: #eeeeee;
 }
 
+.extra.content > .tags {
+    display: inline-block;
+}
+
+.extra.content a.article-type {
+    color: #002b80 !important;  /* Dark Blue */
+}
+
 .article > .header > img {
     width: 100%;
     height: auto;
@@ -100,3 +108,4 @@ body > * {
     width: 70%;
     font-size: 36px;
 }
+
