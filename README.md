@@ -1,3 +1,4 @@
 # thesignal-style-guide
 
-[elements.html](http://style.thesign.al/elements.html)
+[Mockup](http://style.thesign.al/elements.html)
+[Compponents](http://style.thesign.al/components.html)
