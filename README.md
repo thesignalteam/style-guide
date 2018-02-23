@@ -1,4 +1,4 @@
 # thesignal-style-guide
 
-[Mockup](http://style.thesign.al/elements.html) <br>
-[Components](http://style.thesign.al/styling.html)
+[Mockups on Figma](https://www.figma.com/file/P298oBsLwlSv8wUcAgOvNXvb/The-Signal-Mockup) <br>
+[HTML components](http://style.thesign.al/styling.html)

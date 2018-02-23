@@ -34,18 +34,66 @@ body > * {
     margin-bottom: 30px;
 }
 
-.ui.menu {
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*padding-top: 1rem;*/
+    padding-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 0px;
+    color: #666666;
+    background-color: gainsboro;
+}
+
+ui.menu {
     font-size: 24px;
 
     border: none;
     box-shadow: none;
 }
 
+/*.ui.menu.button {*/
+    /*background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgb(47,128,237)), color-stop(0.67, rgb(0,0,0)));*/
+    /*background-image: -moz-linear-gradient(center bottom, rgb(47, 128, 237) 33%, rgb(0,0,0) 67%);*/
+    /*padding: 2px;*/
+/*}*/
+
+/*.ui.menu.button > div {*/
+    /*background: #fff;*/
+/*}*/
+
 .ui.menu .active.item {
     background: none;
-
-    text-decoration: underline;
 }
+
+.ui.menu .logo {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-left: 1.1rem;
+}
+
+.logo-text {
+    display: inline-block;
+    position: absolute;
+    left: 68px;
+    top: 1.9rem;
+}
+
+.ui.menu .logo-image {
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    margin-right: 0.4rem;
+}
+
+.ui.stackable {
+    border-bottom: 0px solid transparent;
+    margin: 100px;
+}
+
 
 .signal.menu {
     color: #8a8a8a;
@@ -54,6 +102,10 @@ body > * {
     font-size: 24px;
 
     margin-bottom: 30px;
+}
+
+.ui.text.menu {
+    text-align: center;
 }
 
 .ui.card {
