@@ -1,15 +1,15 @@
 {
     "project_logo": null,
     "project_favicon": "favicon.png",
-    "project_name": null,
+    "project_name": "The Signal",
     "project_url": null,
-    "copyright_start_year": null,
+    "copyright_start_year": 2017,
     "client_name": null,
     "client_url": null,
     "creators": [
         {
-            "name": null,
-            "url": null
+            "name": "Qi Linzhi",
+            "url": "http://qlz.io"
         }
     ],
     "theme": {
@@ -21,16 +21,18 @@
         "override_code_highlight_bg": "#F9FAFC",
         "sample_dark_background": "#333333",
         "show_project_name": true,
-        "show_version": true,
+        "show_version": false,
         "max_width": null,
         "titles": {
-            "library_title": "Pattern Library",
+            "library_title": "Style Manual",
             "pages_title": "Overview",
             "components_title": "Components"
         }
     },
     "assets": {
-        "css": [],
+        "css": [
+            "../static/thesignal.css"
+        ],
         "js": []
     },
     "font_libraries": {
@@ -40,15 +42,154 @@
     },
     "content": {
         "show_first_page_on_load": true,
-        "title": "Overview",
+        "title": "Introduction",
         "pages": [
             {
-                "name": "introduction",
-                "title": "Introduction",
-                "file": "./pages/intro.md"
+                "name": "about",
+                "title": "About The Signal",
+                "file": "./pages/about.md"
+            },
+            {
+                "name": "licenses",
+                "title": "Licenses",
+                "file": "./pages/licenses.md"
             }
         ]
     },
-    "groups": [],
+    "groups": [
+        {
+            "name": "vi",
+            "title": "Visual Identity",
+            "components": [
+                {
+                    "group": "vi",
+                    "name": "name",
+                    "title": "Name"
+                },
+                {
+                    "group": "vi",
+                    "name": "logo",
+                    "title": "Logo"
+                },
+                {
+                    "group": "vi",
+                    "name": "lockup",
+                    "title": "Lockup"
+                },
+                {
+                    "group": "vi",
+                    "name": "typography",
+                    "title": "Typography"
+                },
+                {
+                    "group": "vi",
+                    "name": "palette",
+                    "title": "Color Palette"
+                }
+            ]
+        },
+        {
+            "name": "publishing",
+            "title": "Publishing",
+            "components": [
+                {
+                    "group": "publishing",
+                    "name": "cms",
+                    "title": "Using Ghost CMS"
+                },
+                {
+                    "group": "publishing",
+                    "name": "decorations",
+                    "title": "Decorations",
+                    "width": "half"
+                },
+                {
+                    "group": "publishing",
+                    "name": "headings",
+                    "title": "Headings",
+                    "width": "half"
+                },
+                {
+                    "group": "publishing",
+                    "name": "table",
+                    "title": "Table of Contents",
+                    "width": "half"
+                },
+                {
+                    "group": "publishing",
+                    "name": "bullet-points",
+                    "title": "Bullet Points",
+                    "width": "half"
+                },
+                {
+                    "group": "publishing",
+                    "name": "quotes",
+                    "title": "Quotes",
+                    "width": "half"
+                }
+            ]
+        },
+        {
+            "name": "design",
+            "title": "Design",
+            "components": [
+                {
+                    "group": "design",
+                    "name": "shape",
+                    "title": "Shape",
+                    "width": "half"
+                },
+                {
+                    "group": "design",
+                    "name": "shadow",
+                    "title": "Shadow",
+                    "width": "half"
+                },
+                {
+                    "group": "design",
+                    "name": "animations",
+                    "title": "Animations"
+                },
+                {
+                    "group": "design",
+                    "name": "photography",
+                    "title": "Photography"
+                }
+            ]
+        },
+        {
+            "name": "assets",
+            "title": "Graphic Asset Library",
+            "components": [
+                {
+                    "group": "assets",
+                    "name": "icons",
+                    "title": "Icons",
+                    "width": "half"
+                },
+                {
+                    "group": "assets",
+                    "name": "animations",
+                    "title": "Animations",
+                    "width": "half"
+                },
+                {
+                    "group": "assets",
+                    "name": "illustrations",
+                    "title": "Illustrations"
+                },
+                {
+                    "group": "assets",
+                    "name": "photos",
+                    "title": "Photos"
+                },
+                {
+                    "group": "assets",
+                    "name": "gifs",
+                    "title": "GIFs"
+                }
+            ]
+        }
+    ],
     "version": "1.9.5"
 }
