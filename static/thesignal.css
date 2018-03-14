@@ -35,25 +35,24 @@ body > * {
 }
 
 .ui.menu {
-    font-size: 24px;
+    font-size: 22px;
 
     border: none;
     box-shadow: none;
 }
 
-.ui.menu .active.item {
+.ui.menu .item {
     background: none;
-
-    text-decoration: underline;
+    font-size: 22px;
+    font-weight: bold !important;
+    margin-bottom: 30px;
+    color: black !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
 }
 
-.signal.menu {
-    color: #8a8a8a;
-
-    font-weight: bold;
-    font-size: 24px;
-
-    margin-bottom: 30px;
+.ui.menu .active.item {
+    border-bottom: 3px solid black !important;
 }
 
 .ui.card {
