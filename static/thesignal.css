@@ -66,6 +66,12 @@ ui.menu {
 .ui.menu .active.item {
     border-bottom: 3px solid black !important;
 }
+
+.menu-search {
+    margin: 25px 10px !important;
+
+}
+
 /*
 .ui.menu .logo {
     margin-top: 1rem;
