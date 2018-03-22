@@ -1,195 +1,193 @@
 {
-    "project_logo": null,
-    "project_favicon": "favicon.png",
-    "project_name": "The Signal",
-    "project_url": null,
-    "copyright_start_year": 2017,
-    "client_name": null,
-    "client_url": null,
-    "creators": [
-        {
-            "name": "Qi Linzhi",
-            "url": "http://qlz.io"
-        }
+  "project_logo": null,
+  "project_favicon": "favicon.png",
+  "project_name": "The Signal",
+  "project_url": null,
+  "copyright_start_year": 2017,
+  "client_name": null,
+  "client_url": null,
+  "creators": [
+    {
+      "name": "Qi Linzhi",
+      "url": "http://qlz.io"
+    }
+  ],
+  "theme": {
+    "border_color": "#E0E6ED",
+    "highlight_color": "#F9FAFC",
+    "brand_color": "#00585C",
+    "background_color": "#FFFFFF",
+    "code_highlight_theme": "github",
+    "override_code_highlight_bg": "#F9FAFC",
+    "sample_dark_background": "#333333",
+    "show_project_name": true,
+    "show_version": false,
+    "max_width": null,
+    "titles": {
+      "library_title": "Style Guide",
+      "pages_title": "Asset Library",
+      "components_title": "Components"
+    }
+  },
+  "assets": {
+    "css": [
+      "../static/thesignal.css"
     ],
-    "theme": {
-        "border_color": "#E0E6ED",
-        "highlight_color": "#F9FAFC",
-        "brand_color": "#00585C",
-        "background_color": "#FFFFFF",
-        "code_highlight_theme": "github",
-        "override_code_highlight_bg": "#F9FAFC",
-        "sample_dark_background": "#333333",
-        "show_project_name": true,
-        "show_version": false,
-        "max_width": null,
-        "titles": {
-            "library_title": "Style Manual",
-            "pages_title": "Overview",
-            "components_title": "Components"
+    "js": []
+  },
+  "font_libraries": {
+    "typekit_code": null,
+    "typography_web_fonts": null,
+    "google_web_fonts": null
+  },
+  "content": {
+    "show_first_page_on_load": false,
+    "title": "Introduction",
+    "pages": [
+      {
+        "name": "profiles",
+        "title": "Profile Pictures",
+        "file": "./pages/profiles.md"
+      },
+      {
+        "name": "illustrations",
+        "title": "Illustrations",
+        "file": "./pages/illustrations.md"
+      }
+    ]
+  },
+  "groups": [
+    {
+      "name": "vi",
+      "title": "Visual Identity",
+      "components": [
+        {
+          "group": "vi",
+          "name": "name",
+          "title": "Name",
+          "options": {
+            "disable_code_sample": true
+          }
+        },
+        {
+          "group": "vi",
+          "name": "logo",
+          "title": "Logo"
+        },
+        {
+          "group": "vi",
+          "name": "lockup",
+          "title": "Lockup"
+        },
+        {
+          "group": "vi",
+          "name": "typography",
+          "title": "Typography"
+        },
+        {
+          "group": "vi",
+          "name": "palette",
+          "title": "Color Palette"
         }
+      ]
     },
-    "assets": {
-        "css": [
-            "../static/thesignal.css"
-        ],
-        "js": []
-    },
-    "font_libraries": {
-        "typekit_code": null,
-        "typography_web_fonts": null,
-        "google_web_fonts": null
-    },
-    "content": {
-        "show_first_page_on_load": true,
-        "title": "Introduction",
-        "pages": [
-            {
-                "name": "about",
-                "title": "About The Signal",
-                "file": "./pages/about.md"
-            },
-            {
-                "name": "licenses",
-                "title": "Licenses",
-                "file": "./pages/licenses.md"
-            }
-        ]
-    },
-    "groups": [
+    {
+      "name": "publishing",
+      "title": "Publishing",
+      "components": [
         {
-            "name": "vi",
-            "title": "Visual Identity",
-            "components": [
-                {
-                    "group": "vi",
-                    "name": "name",
-                    "title": "Name"
-                },
-                {
-                    "group": "vi",
-                    "name": "logo",
-                    "title": "Logo"
-                },
-                {
-                    "group": "vi",
-                    "name": "lockup",
-                    "title": "Lockup"
-                },
-                {
-                    "group": "vi",
-                    "name": "typography",
-                    "title": "Typography"
-                },
-                {
-                    "group": "vi",
-                    "name": "palette",
-                    "title": "Color Palette"
-                }
-            ]
+          "group": "publishing",
+          "name": "cms",
+          "title": "Using Ghost CMS"
         },
         {
-            "name": "publishing",
-            "title": "Publishing",
-            "components": [
-                {
-                    "group": "publishing",
-                    "name": "cms",
-                    "title": "Using Ghost CMS"
-                },
-                {
-                    "group": "publishing",
-                    "name": "decorations",
-                    "title": "Decorations",
-                    "width": "half"
-                },
-                {
-                    "group": "publishing",
-                    "name": "headings",
-                    "title": "Headings",
-                    "width": "half"
-                },
-                {
-                    "group": "publishing",
-                    "name": "table",
-                    "title": "Table of Contents",
-                    "width": "half"
-                },
-                {
-                    "group": "publishing",
-                    "name": "bullet-points",
-                    "title": "Bullet Points",
-                    "width": "half"
-                },
-                {
-                    "group": "publishing",
-                    "name": "quotes",
-                    "title": "Quotes",
-                    "width": "half"
-                }
-            ]
+          "group": "publishing",
+          "name": "decorations",
+          "title": "Decorations",
+          "width": "half"
         },
         {
-            "name": "design",
-            "title": "Design",
-            "components": [
-                {
-                    "group": "design",
-                    "name": "shape",
-                    "title": "Shape",
-                    "width": "half"
-                },
-                {
-                    "group": "design",
-                    "name": "shadow",
-                    "title": "Shadow",
-                    "width": "half"
-                },
-                {
-                    "group": "design",
-                    "name": "animations",
-                    "title": "Animations"
-                },
-                {
-                    "group": "design",
-                    "name": "photography",
-                    "title": "Photography"
-                }
-            ]
+          "group": "publishing",
+          "name": "headings",
+          "title": "Headings",
+          "width": "half"
         },
         {
-            "name": "assets",
-            "title": "Graphic Asset Library",
-            "components": [
-                {
-                    "group": "assets",
-                    "name": "icons",
-                    "title": "Icons",
-                    "width": "half"
-                },
-                {
-                    "group": "assets",
-                    "name": "animations",
-                    "title": "Animations",
-                    "width": "half"
-                },
-                {
-                    "group": "assets",
-                    "name": "illustrations",
-                    "title": "Illustrations"
-                },
-                {
-                    "group": "assets",
-                    "name": "photos",
-                    "title": "Photos"
-                },
-                {
-                    "group": "assets",
-                    "name": "gifs",
-                    "title": "GIFs"
-                }
-            ]
+          "group": "publishing",
+          "name": "table",
+          "title": "Table of Contents",
+          "width": "half"
+        },
+        {
+          "group": "publishing",
+          "name": "bullet-points",
+          "title": "Bullet Points",
+          "width": "half"
+        },
+        {
+          "group": "publishing",
+          "name": "quotes",
+          "title": "Quotes",
+          "width": "half"
         }
-    ],
-    "version": "1.9.5"
+      ]
+    },
+    {
+      "name": "design",
+      "title": "Design",
+      "components": [
+        {
+          "group": "design",
+          "name": "shape",
+          "title": "Shape",
+          "width": "half"
+        },
+        {
+          "group": "design",
+          "name": "shadow",
+          "title": "Shadow",
+          "width": "half"
+        },
+        {
+          "group": "design",
+          "name": "animations",
+          "title": "Animations"
+        },
+        {
+          "group": "design",
+          "name": "photography",
+          "title": "Photography"
+        }
+      ]
+    },
+    {
+      "name": "assets",
+      "title": "Graphic Asset Library",
+      "components": [
+        {
+          "group": "assets",
+          "name": "icons",
+          "title": "Icons",
+          "width": "half"
+        },
+        {
+          "group": "assets",
+          "name": "animations",
+          "title": "Animations",
+          "width": "half"
+        },
+        {
+          "group": "assets",
+          "name": "photos",
+          "title": "Photos"
+        },
+        {
+          "group": "assets",
+          "name": "gifs",
+          "title": "GIFs"
+        }
+      ]
+    }
+  ],
+  "version": "1.9.5"
 }

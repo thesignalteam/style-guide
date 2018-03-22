@@ -26,12 +26,26 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: 'HK Carta';
+    src: url('./fonts/HKCarta-Regular.svg') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
 * {
     font-family: "Cerebri Sans", sans-serif !important;
 }
 
 body > * {
     margin-bottom: 30px;
+}
+
+iframe {
+    border: none;
+
+    margin-left: -30%;
+    margin-right: -30%;
 }
 
 .footer {
@@ -161,3 +175,22 @@ ui.menu {
     font-size: 36px;
 }
 
+/* Astrum */
+
+.ndpl-component__container .serif {
+    color: grey;
+    font-size: 14px;
+
+    text-transform: uppercase;
+}
+
+.ndpl-component__container h1 {
+
+}
+
+.ndpl-component__container h2 {
+    color: grey;
+    font-size: 14px;
+
+    text-transform: uppercase;
+}
