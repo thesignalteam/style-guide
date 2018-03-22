@@ -63,25 +63,30 @@ iframe {
 
 ui.menu {
     font-size: 24px;
-
     border: none;
     box-shadow: none;
 }
 
-/*.ui.menu.button {*/
-    /*background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgb(47,128,237)), color-stop(0.67, rgb(0,0,0)));*/
-    /*background-image: -moz-linear-gradient(center bottom, rgb(47, 128, 237) 33%, rgb(0,0,0) 67%);*/
-    /*padding: 2px;*/
-/*}*/
-
-/*.ui.menu.button > div {*/
-    /*background: #fff;*/
-/*}*/
-
-.ui.menu .active.item {
+.ui.menu .item {
     background: none;
+    font-size: 22px;
+    font-weight: bold !important;
+    margin-bottom: 30px;
+    color: black !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
 }
 
+.ui.menu .active.item {
+    border-bottom: 3px solid black !important;
+}
+
+.menu-search {
+    margin: 25px 10px !important;
+
+}
+
+/*
 .ui.menu .logo {
     margin-top: 1rem;
     font-size: 1.8rem;
@@ -97,11 +102,11 @@ ui.menu {
 }
 
 .ui.menu .logo-image {
-    height: 45px;
+    height: 45px;`
     width: 45px;
     display: inline-block;
     margin-right: 0.4rem;
-}
+}*/
 
 .ui.stackable {
     border-bottom: 0px solid transparent;
@@ -118,9 +123,9 @@ ui.menu {
     margin-bottom: 30px;
 }
 
-.ui.text.menu {
+/*.ui.text.menu {
     text-align: center;
-}
+}*/
 
 .ui.card {
     width: 360px;
