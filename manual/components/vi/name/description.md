@@ -1,1 +1,0 @@
-Unified name for The Signal.

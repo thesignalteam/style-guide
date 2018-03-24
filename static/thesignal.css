@@ -1,3 +1,5 @@
+@import './semantic.css';
+
 @font-face {
     font-family: 'Cerebri Sans';
     src: url('./fonts/cerebrisans-regular.ttf') format('truetype');
@@ -39,13 +41,6 @@
 
 body > * {
     margin-bottom: 30px;
-}
-
-iframe {
-    border: none;
-
-    margin-left: -30%;
-    margin-right: -30%;
 }
 
 .footer {
@@ -180,14 +175,91 @@ ui.menu {
     font-size: 36px;
 }
 
-/* Astrum */
+/* Icons */
 
-.ndpl-component__container .serif {
-    color: grey;
-    font-size: 14px;
+.icon {
+    display: inline-block;
 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icon.outline {
+    width: 25px;
+    height: 25px;
+}
+
+.icon.outline.colored {
+    width: 40px;
+    height: 40px;
+}
+
+.icon.filled {
+    width: 100px;
+    height: 100px;
+}
+
+
+.icon.close {
+    background-image: url("/static/icons/icon_close.svg");
+}
+
+.icon.search {
+    background-image: url("/static/icons/icon_search.svg");
+}
+
+.icon.fb {
+    background-image: url("/static/icons/icon_fb.svg");
+}
+
+.icon.twitter {
+    background-image: url("/static/icons/icon_twitter.svg");
+}
+
+.icon.email {
+    background-image: url("/static/icons/icon_email.svg");
+}
+
+
+/* Buttons and forms */
+
+.ui.basic.secondary.button {
+    outline: none;
+    box-shadow: none !important;
+
+    border: 2px solid transparent;
+    border-image: linear-gradient(0, #EBEBEB 0%, rgb(252, 236, 188) 100%);
+    border-image-slice: 1;
+
+    font-weight: bold;
     text-transform: uppercase;
 }
+
+.ui.basic.secondary.button:hover {
+    outline: none;
+    box-shadow: none !important;
+
+    border: 2px solid transparent;
+    border-image: linear-gradient(0, #EBEBEB 0%, rgb(252, 236, 188) 100%);
+    border-image-slice: 1;
+
+    background-color: rgba(252, 236, 188, 0.2) !important;
+}
+
+.ui.form input[type="text"] {
+    border: 2px solid transparent;
+    border-image: linear-gradient(0, #EBEBEB 0%, #FCECBC 100%);
+    border-image-slice: 1;
+}
+
+/* Tags */
+
+.ui.label.outline {
+    background-color: transparent;
+    border: 1px solid grey;
+}
+
+/* Astrum */
 
 .ndpl-component__container h1 {
 
@@ -198,4 +270,12 @@ ui.menu {
     font-size: 14px;
 
     text-transform: uppercase;
+}
+
+.ndpl-component__container h3 {
+    font-size: 24px;
+}
+
+.ndpl-component__container .manual-serif {
+    font-family: 'HK Carta', serif !important;
 }
