@@ -183,6 +183,11 @@
                     "name": "tags",
                     "title": "Tags",
                     "width": "half"
+                },
+                {
+                    "group": "web",
+                    "name": "cards",
+                    "title": "Cards"
                 }
             ]
         }
