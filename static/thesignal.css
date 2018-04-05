@@ -135,6 +135,8 @@ ui.menu {
 
     border-radius: 16px;
     box-shadow: 0 0 30px 2px #E0E0E0;
+
+    position: relative;
 }
 
 .ui.card.featured {
@@ -149,35 +151,77 @@ ui.menu {
     transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.ui.card > :first-child {
+.ui.card.featured:hover {
+
+}
+
+.ui.card > * {
+    height: 100%;
+}
+
+.ui.card .image img, .ui.card .image {
     border-radius: 16px 16px 0 0 !important;
 }
 
-.ui.card > .image {
+.ui.card.featured .image img, .ui.card.featured .image {
+    border-radius: 16px 0 0 16px !important;
+}
+
+.ui.card .image {
     height: 200px;
 }
 
-.ui.card > .image > * {
+.ui.card.featured .image {
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+}
+
+.ui.card .image > * {
     object-fit: cover;
 
     height: 100% !important;
     width: 100% !important;
+
+    position: absolute;
 }
 
-.ui.card > .content {
+.ui.card .content {
     margin: 14px;
     border-top: 0;
+
+    position: relative;
+}
+
+.ui.card.featured .content {
+    margin: 30px;
+    border-top: 0;
+
+    height: 100%;
 }
 
 .ui.card .divider {
     color: lightgray;
 }
 
-.ui.card > .content > .meta {
+.ui.card .content .meta {
     margin-top: 10px;
 }
 
-.ui.card > .content > .description {
+.ui.card .content .header:not(.ui) {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.3em;
+
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.ui.card.featured .content .header {
+    font-size: 28px;
+}
+
+.ui.card .content .description {
     color: #333333;
     font-weight: 500;
     font-size: 14px;
@@ -186,19 +230,32 @@ ui.menu {
     margin-bottom: 20px;
 }
 
-.ui.card > .content > .header:not(.ui) {
-    font-size: 20px;
+.ui.card.featured .content .description {
+    position: absolute;
+
+    bottom: 40px;
+    width: 100%;
 }
 
 .ui.label {
     background-color: #EEEEEE;
 }
 
-.ui.card > .extra.content {
+.ui.card .extra.content {
     border-top: 2px solid #EEEEEE !important;
-
-    margin-top: -14px;
+    margin-top: 0;
     margin-bottom: 2px;
+}
+
+.ui.card.featured .extra.content {
+    position: absolute;
+
+    width: 100%;
+    height: 40px;
+    bottom: 5px;
+
+    margin: 0;
+    padding-top: 8px;
 }
 
 .extra.content > * {
@@ -210,6 +267,10 @@ ui.menu {
     color: #444444 !important;
 
     margin-right: 10px;
+}
+
+.extra.content .tag > a:not(:hover) {
+    color: rgba(0, 0, 0, 0.4);
 }
 
 .extra.content .tag + .tag {
