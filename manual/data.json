@@ -33,7 +33,10 @@
         "css": [
             "../static/thesignal.css"
         ],
-        "js": []
+        "js": [
+            "../static/jquery.min.js",
+            "../static/semantic.js"
+        ]
     },
     "font_libraries": {
         "typekit_code": null,
@@ -104,15 +107,14 @@
                     "title": "Using Ghost CMS"
                 },
                 {
-                    "group": "publishing",
-                    "name": "decorations",
-                    "title": "Decorations",
-                    "width": "half"
+                    "name": "headings",
+                    "title": "Headings",
+                    "group": "publishing"
                 },
                 {
                     "group": "publishing",
-                    "name": "headings",
-                    "title": "Headings",
+                    "name": "decorations",
+                    "title": "Decorations",
                     "width": "half"
                 },
                 {
@@ -182,6 +184,12 @@
                     "group": "web",
                     "name": "tags",
                     "title": "Tags",
+                    "width": "half"
+                },
+                {
+                    "group": "web",
+                    "name": "social",
+                    "title": "Social Media",
                     "width": "half"
                 },
                 {

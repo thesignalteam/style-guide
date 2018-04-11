@@ -281,6 +281,16 @@ body > * {
     border-top: none !important;
 }
 
+.ui.card.author .url {
+    color: #2F80ED;
+}
+
+.ui.card.author  .icon {
+    margin-right: 0;
+
+    transform: translate(5px, 7px);
+}
+
 .ui.card.featured .extra.content {
     position: absolute;
 
@@ -357,6 +367,10 @@ body > * {
 
 .icon.search {
     background-image: url("/static/icons/icon_search.svg");
+}
+
+.icon.link {
+    background-image: url("/static/icons/icon_link.svg");
 }
 
 .icon.fb {
@@ -444,20 +458,75 @@ body > * {
     margin-left: 18px;
 }
 
-/* Astrum */
+/* Article */
 
-.ndpl-component__container h1 {
+.article h1 {
 
 }
 
-.ndpl-component__container h2 {
+.article h2 {
+    font-size: 20px;
+
+    font-style: italic;
+    font-weight: normal;
+
+    line-height: 125%;
+}
+
+.article h3 {
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+.article h4 {
+    font-size: 20px;
+
+    line-height: 140%;
+
+    color: #2F80ED;
+}
+
+.article p {
+    font-size: 16px;
+}
+
+.article mark {
+    background-color: #FFE640;
+
+    margin: -6px;
+    padding: 6px;
+}
+
+
+/* Astrum */
+
+.ndpl-component__container .article .sticky.left {
+    position: absolute;
+    text-align: right;
+
+    right: 100%;
+}
+
+.ndpl-component__container .article .sticky.right {
+    position: absolute;
+    text-align: left;
+
+    left: 100%;
+}
+
+.ndpl-component__container > h1 {
+
+}
+
+.ndpl-component__container > h2 {
     color: grey;
     font-size: 14px;
 
     text-transform: uppercase;
 }
 
-.ndpl-component__container h3 {
+.ndpl-component__container > h3 {
     font-size: 24px;
 }
 
