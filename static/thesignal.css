@@ -51,40 +51,40 @@ body > * {
 }
 
 /*.footer {*/
-    /*position: absolute;*/
-    /*right: 0;*/
-    /*bottom: 0;*/
-    /*left: 0;*/
-    /*!*padding-top: 1rem;*!*/
-    /*padding-bottom: 1rem;*/
-    /*text-align: center;*/
-    /*margin-bottom: 0px;*/
-    /*color: #666666;*/
-    /*background-color: gainsboro;*/
+/*position: absolute;*/
+/*right: 0;*/
+/*bottom: 0;*/
+/*left: 0;*/
+/*!*padding-top: 1rem;*!*/
+/*padding-bottom: 1rem;*/
+/*text-align: center;*/
+/*margin-bottom: 0px;*/
+/*color: #666666;*/
+/*background-color: gainsboro;*/
 /*}*/
 
 /*ui.menu {*/
-    /*font-size: 24px;*/
-    /*border: none;*/
-    /*box-shadow: none;*/
+/*font-size: 24px;*/
+/*border: none;*/
+/*box-shadow: none;*/
 /*}*/
 
 /*.ui.menu .item {*/
-    /*background: none;*/
-    /*font-size: 22px;*/
-    /*font-weight: bold !important;*/
-    /*margin-bottom: 30px;*/
-    /*color: black !important;*/
-    /*margin-left: 10px !important;*/
-    /*margin-right: 10px !important;*/
+/*background: none;*/
+/*font-size: 22px;*/
+/*font-weight: bold !important;*/
+/*margin-bottom: 30px;*/
+/*color: black !important;*/
+/*margin-left: 10px !important;*/
+/*margin-right: 10px !important;*/
 /*}*/
 
 /*.ui.menu .active.item {*/
-    /*border-bottom: 3px solid black !important;*/
+/*border-bottom: 3px solid black !important;*/
 /*}*/
 
 /*.menu-search {*/
-    /*margin: 25px 10px !important;*/
+/*margin: 25px 10px !important;*/
 
 /*}*/
 
@@ -114,7 +114,6 @@ body > * {
     border-bottom: 0px solid transparent;
     margin: 100px;
 }
-
 
 .signal.menu {
     color: #8a8a8a;
@@ -285,7 +284,7 @@ body > * {
     color: #2F80ED;
 }
 
-.ui.card.author  .icon {
+.ui.card.author .icon {
     margin-right: 0;
 
     transform: translate(5px, 7px);
@@ -360,7 +359,6 @@ body > * {
     height: 100px;
 }
 
-
 .icon.close {
     background-image: url("/static/icons/icon_close.svg");
 }
@@ -384,7 +382,6 @@ body > * {
 .icon.email {
     background-image: url("/static/icons/icon_email.svg");
 }
-
 
 /* Buttons and forms */
 
@@ -460,6 +457,12 @@ body > * {
 
 /* Article */
 
+.article {
+    font-size: 16px;
+
+    line-height: 140%;
+}
+
 .article h1 {
 
 }
@@ -487,10 +490,6 @@ body > * {
     color: #2F80ED;
 }
 
-.article p {
-    font-size: 16px;
-}
-
 .article mark {
     background-color: #FFE640;
 
@@ -498,6 +497,21 @@ body > * {
     padding: 6px;
 }
 
+.article ul, .article ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.article ul li {
+    padding-left: 1em;
+    text-indent: -.7em;
+}
+
+.article ul li::before {
+    content: "• ";
+    color: #2F80ED; /* or whatever color you prefer */
+}
 
 /* Astrum */
 
@@ -519,14 +533,14 @@ body > * {
 
 }
 
-.ndpl-component__container > h2 {
+.ndpl-component__sample > h2 {
     color: grey !important;
     font-size: 14px !important;
 
     text-transform: uppercase !important;
 }
 
-.ndpl-component__container > h3 {
+.ndpl-component__sample > h3 {
     font-size: 24px;
 }
 

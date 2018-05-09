@@ -109,31 +109,46 @@
                 {
                     "name": "headings",
                     "title": "Headings",
-                    "group": "publishing"
+                    "group": "publishing",
+                    "options": {
+                        "disable_code_sample": true
+                    }
                 },
                 {
                     "group": "publishing",
                     "name": "decorations",
                     "title": "Decorations",
-                    "width": "half"
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
                 },
                 {
                     "group": "publishing",
                     "name": "table",
                     "title": "Table of Contents",
-                    "width": "half"
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
                 },
                 {
                     "group": "publishing",
                     "name": "bullet-points",
                     "title": "Bullet Points",
-                    "width": "half"
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
                 },
                 {
                     "group": "publishing",
                     "name": "quotes",
                     "title": "Quotes",
-                    "width": "half"
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
                 }
             ]
         },
