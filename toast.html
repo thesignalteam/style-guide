@@ -1,0 +1,29 @@
+<style>
+    .iziToast {
+        font-family: "Open Sans", sans-serif;
+    }
+</style>
+
+<script>
+    if (location.pathname === "/"){
+        if (Cookies.get('prompted') === 'true') {
+            // prompted
+        }
+        else {
+            $(document).ready(function() {
+                iziToast.show({
+                    title: 'Hurrah! The Signal is celebrating its one year anniversary',
+                    id: 'prompt',
+                    position: 'center',
+                    buttons: [
+                        ['<button><b>YEAR IN REVIEW</b></button>', function (instance, toast) {
+                            Cookies.set('prompted', 'true');
+                            window.location = "/pages/anniversary/";
+                        }]
+                    ],
+                    timeout: false,
+                    overlay: true
+                });
+            });
+        }}
+</script>
