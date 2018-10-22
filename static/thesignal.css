@@ -810,6 +810,33 @@ body > * {
     color: #2F80ED;;
 }
 
+/* Search */
+
+.search.counter {
+    margin-bottom: 10px;
+}
+
+.search.result > a {
+    color: initial;
+    text-decoration: none;
+}
+
+.search.result .title {
+    margin-top: 40px;
+
+    font-size: 20px;
+}
+
+.search.result .date {
+    text-decoration: none;
+
+    font-weight: bold;
+    color: grey;
+
+    margin-bottom: 20px;
+}
+
+
 /* Footer */
 
 .site-footer {
