@@ -878,3 +878,105 @@ body > * {
 .ndpl-component__container .manual-serif {
     font-family: 'HK Carta', serif !important;
 }
+/*====================================================
+	Fixed Horizontal card, page header, subscribe cta
+====================================================*/
+.ui.card.featured {
+    width: auto;
+    height: 300px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+    .ui.card.featured {
+        min-height: 600px;
+        height: 60vh;
+    }
+    .ui.card.featured > .ui.grid {
+        flex-direction: column;
+    }
+
+    .ui.grid > .row > [class*="eight wide"].column, .ui.grid > .column.row > [class*="eight wide"].column, .ui.grid > [class*="eight wide"].column, .ui.column.grid > [class*="eight wide"].column {
+        display: flex;
+        flex: 1;
+        width: 100% !important;
+        overflow: hidden;
+    }
+    .ui.grid > .row > [class*="eight wide"].column, .ui.grid > .column.row > [class*="eight wide"].column, .ui.grid > [class*="eight wide"].column, .ui.column.grid > [class*="eight wide"].column:nth-child(2) {
+        flex:4;
+    }
+    .ui.card.featured .content {
+        margin: 30px;
+        border-top: 0;
+        height: 100%;
+        position: relative;
+    }
+
+    .ui.card.featured .content .description {
+        position: relative;
+        top: 10px;
+        width: 100%;
+    }
+    .ui.message > .icon {
+        margin-right: 0.6em;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .ui.card.featured {
+        height: 80vh;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #header {
+        flex-direction: column;
+    }
+
+    .ui.menu:not(.vertical) .right.item, .ui.menu:not(.vertical) .right.menu {
+        display: flex;
+        margin-left: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .ui.message {
+        padding: 40px 10%;
+    }
+    #main #subscribe-header .ui.message {
+        flex-direction: column;
+    }
+    .ui.message > .icon {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+#main #subscribe-header .ui.message {
+    margin: -5% 5% 0;
+    padding: 40px 15%;
+    box-shadow: 2px 2px 7px 5px aliceblue;
+    max-width: 1200px;
+}
+
+#subscribe-header {
+    justify-content: center;
+}
+
+.ui.form input[type="text"] {
+    border: 1px solid #b3b3b3;;
+}
+.ui.secondary.basic.button {
+    border: 2px solid #b3b3b3;
+}
+.ui.basic.secondary.button:hover {
+    background: none;
+    background-color: #59BCDC !important;
+    color: #FACB33 !important;
+    border: 2px solid #082F5E;
+    border-image: none;
+    transition-duration:0.3s
+}
+/*====================================================
+
+====================================================*/
