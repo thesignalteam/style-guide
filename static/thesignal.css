@@ -921,6 +921,10 @@ body > * {
         margin-right: 0.6em;
     }
 }
+.ui.card.featured .content .description {
+    position: relative;
+    top: 10px;
+}
 
 @media only screen and (max-width: 650px) {
     .ui.card.featured {
