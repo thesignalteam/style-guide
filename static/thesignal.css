@@ -243,19 +243,25 @@ body > * {
     color: initial !important;
 }
 
-.ui.card.author {
-
+.ui.card.author.wide {
+    box-shadow: none;
+    width: 90%;
+    height: 200px;
 }
 
 .ui.card.author .image {
     width: 160px;
     height: 160px;
 
-    margin: 40px 50%;
     transform: translateX(-80px);
+    margin: 40px 50%;
 
     border-radius: 100px !important;
     box-shadow: 0 0 12px 3px #DDDDDD;
+}
+
+.ui.card.author.wide .image {
+    transform: translateX(-80px) translateY(-40px);
 }
 
 .ui.card.author img {
@@ -277,7 +283,7 @@ body > * {
     position: relative;
 }
 
-.ui.card.author .content > * {
+.ui.card.author:not(.wide) .content > * {
     text-align: center;
 }
 
@@ -290,6 +296,12 @@ body > * {
 
     text-decoration: none;
 }
+
+.ui.card.author.wide .meta {
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
 
 .ui.card:not(.featured) .content .header:not(.ui) {
     font-size: 20px !important;
@@ -319,6 +331,11 @@ body > * {
     line-height: 150%;
 
     margin-bottom: 20px;
+}
+
+.ui.card.author.wide .content .header {
+    font-size: 36px !important;
+    margin-top: 300px;
 }
 
 .ui.card.author .content .description {
