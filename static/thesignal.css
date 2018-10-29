@@ -142,7 +142,8 @@ body > * {
 
 .ui.message {
     background-color: white;
-    border-color: #EEEEEE;
+    border: none;
+    box-shadow: none;
 
     border-radius: 16px;
 
@@ -968,32 +969,3 @@ body > * {
         margin-bottom: 20px;
     }
 }
-
-#main #subscribe-header .ui.message {
-    margin: -5% 5% 0;
-    padding: 40px 15%;
-    box-shadow: 2px 2px 7px 5px aliceblue;
-    max-width: 1200px;
-}
-
-#subscribe-header {
-    justify-content: center;
-}
-
-.ui.form input[type="text"] {
-    border: 1px solid #b3b3b3;;
-}
-.ui.secondary.basic.button {
-    border: 2px solid #b3b3b3;
-}
-.ui.basic.secondary.button:hover {
-    background: none;
-    background-color: #59BCDC !important;
-    color: #FACB33 !important;
-    border: 2px solid #082F5E;
-    border-image: none;
-    transition-duration:0.3s
-}
-/*====================================================
-
-====================================================*/
