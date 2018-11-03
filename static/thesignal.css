@@ -971,6 +971,14 @@ body > * {
         margin-right: 0;
         margin-bottom: 20px;
     }
+    .ui.icon.message .icon:not(.close) + .content {
+        text-align: center;
+    }
+    .ui.form .inline.fields .wide.field {
+        display: block;
+        margin-top: 10px;
+        justify-content: center;
+    }
 }
 
 #main #subscribe-header .ui.message {
