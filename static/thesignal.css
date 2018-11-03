@@ -979,6 +979,9 @@ body > * {
         margin-top: 10px;
         justify-content: center;
     }
+    .ui.card:not(.featured):not(.author) .extra.content {
+        display: none;
+    }
 }
 
 #main #subscribe-header .ui.message {
