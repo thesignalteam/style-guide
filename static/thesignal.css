@@ -972,4 +972,15 @@ body > * {
         margin-right: 0;
         margin-bottom: 20px;
     }
+    .ui.icon.message .icon:not(.close) + .content {
+        text-align: center;
+    }
+    .ui.form .inline.fields .wide.field {
+        display: block;
+        margin-top: 10px;
+        justify-content: center;
+    }
+    .ui.card:not(.featured):not(.author) .extra.content {
+        display: none;
+    }
 }
