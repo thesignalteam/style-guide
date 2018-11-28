@@ -83,9 +83,8 @@ body > * {
 }
 
 
-
 #header {
-    padding: 20px 6% 20px 6%;
+    padding: 20px 5% 20px 5%;
 
     width: 100%;
     height: 200px;
@@ -167,17 +166,29 @@ body > * {
 
 .ui.secondary.pointing.right.menu .item {
     font-size: 16px;
+    font-weight: bold;
 }
+
+.ui.secondary.pointing.right.menu .item .icon {
+    height: 16px;
+    width: 16px;
+
+    margin-right: 8px;
+}
+
 
 .ui.link.card {
     border-radius: 16px;
 }
 
-.ui.card {
-    width: 360px;
-    height: 500px;
+.card {
+    border-radius: 16px !important;
+}
 
-    border-radius: 16px;
+.ui.stackable.cards > .card {
+    width: 360px;
+    height: 500px !important;
+
     position: relative;
 }
 
@@ -429,6 +440,25 @@ body > * {
     border-left: 1px solid lightgray !important;
 }
 
+/* Tag cloud */
+
+.custom-tagcloud {
+    position: relative;
+    overflow: hidden;
+    height: 62px;
+}
+
+.custom-tagcloud:after {
+    content: "";
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 15%;
+    height: 30px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+}
+
 /* Icons */
 
 .icon {
@@ -475,6 +505,10 @@ body > * {
 
 .icon.email {
     background-image: url("./icons/icon_email.svg");
+}
+
+.icon.shuffle {
+    background-image: url("./icons/icon_shuffle.svg");
 }
 
 /* Buttons and forms */
@@ -544,6 +578,11 @@ body > * {
     background-size: contain;
     background-repeat: no-repeat;
 
+    width: 20px;
+    height: 20px;
+
+    border-radius: 5px;
+
     transform: scale(1.3) translateY(2px);
 
     margin-left: 18px;
@@ -551,7 +590,16 @@ body > * {
 
 /* Article */
 
-.article  #article-content {
+.article {
+    position: relative;
+    margin: 0;
+}
+
+.article #article-grid {
+    margin: 3%;
+}
+
+.article #article-content {
     font-size: 16px;
 
     line-height: 140%;
@@ -580,10 +628,14 @@ body > * {
     margin-bottom: -40px;
 }
 
-.article .image {
-    margin: -10px -50px 40px;
+.article .post.meta .label {
+    margin-bottom: 5px;
+}
 
-    width: calc(100% + 100px);
+.article .image {
+    left: 0;
+
+    width: 100vw;
     height: auto;
 
     max-height: 700px;
@@ -598,12 +650,12 @@ body > * {
 }
 
 .article h2 {
-    font-size: 20px;
+    font-size: 18px;
 
     font-style: italic;
     font-weight: normal;
 
-    line-height: 125%;
+    line-height: 135%;
 }
 
 .article h3 {
@@ -617,7 +669,7 @@ body > * {
 .article h4 {
     font-size: 18px;
 
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 20px;
     line-height: 140%;
 
@@ -659,11 +711,13 @@ body > * {
     margin-bottom: 10px;
 }
 
-.article blockquote p {
-    margin-top: 30px;
-    margin-bottom: 30px;
+.article #article-content blockquote p {
+    margin-top: 40px;
+    margin-bottom: 50px;
 
     font-style: italic;
+
+    font-size: 24px;
 }
 
 .article blockquote p::before {
@@ -683,6 +737,21 @@ body > * {
 
 .article #article-content .extra.content h3 {
     font-size: 22px;
+}
+
+.sidebar-link > a {
+    text-decoration: none;
+
+    color: black;
+    font-weight: bold;
+}
+
+.sidebar-link {
+    margin-bottom: 10px;
+}
+
+.ui.header {
+    color: dimgrey;
 }
 
 /* Projects */
@@ -720,6 +789,7 @@ body > * {
 /* About */
 
 #about-header {
+    background-color: black;
     width: 100%;
 }
 
@@ -728,7 +798,6 @@ body > * {
 }
 
 #about-header #header {
-    background-color: black;
     margin: 0;
 }
 
@@ -742,6 +811,8 @@ body > * {
 
 #about-header > img {
     width: 100%;
+    margin-top: -60px;
+    min-width: 600px;
 }
 
 .about .icon {
@@ -825,7 +896,27 @@ body > * {
     display: list-item;
     list-style-type: disc;
 
-    color: #2F80ED;;
+    color: #2F80ED;
+}
+
+/* Tag page */
+
+#tag-row {
+    margin-top: 0;
+
+    font-size: 28px;
+    line-height: 72px;
+}
+
+#tag-label {
+    width: auto;
+    margin-right: 20px;
+
+    font-weight: bold;
+}
+
+#tag-label, #tag-body {
+    float: left;
 }
 
 /* Search */
@@ -896,6 +987,7 @@ body > * {
 .ndpl-component__container .manual-serif {
     font-family: 'HK Carta', serif !important;
 }
+
 /*====================================================
 	Fixed Horizontal card, page header, subscribe cta
 ====================================================*/
@@ -910,6 +1002,7 @@ body > * {
         min-height: 600px;
         height: 60vh;
     }
+
     .ui.card.featured > .ui.grid {
         flex-direction: column;
     }
@@ -920,11 +1013,13 @@ body > * {
         width: 100% !important;
         overflow: hidden;
     }
+
     .ui.grid > .row > [class*="eight wide"].column, .ui.grid > .column.row > [class*="eight wide"].column, .ui.grid > [class*="eight wide"].column, .ui.column.grid > [class*="eight wide"].column:nth-child(2) {
-        flex:4;
+        flex: 4;
     }
+
     .ui.card.featured .content {
-        margin: 30px;
+        margin: 5px 30px;
         border-top: 0;
         height: 100%;
         position: relative;
@@ -935,10 +1030,12 @@ body > * {
         top: 10px;
         width: 100%;
     }
+
     .ui.message > .icon {
         margin-right: 0.6em;
     }
 }
+
 .ui.card.featured .content .description {
     position: relative;
     top: 10px;
@@ -955,7 +1052,13 @@ body > * {
         flex-direction: column;
     }
 
+    #logo-group {
+        transform: scale(0.7);
+    }
+
     .ui.menu:not(.vertical) .right.item, .ui.menu:not(.vertical) .right.menu {
+        margin-top: 30px;
+
         display: flex;
         margin-left: 0 !important;
     }
@@ -965,22 +1068,27 @@ body > * {
     .ui.message {
         padding: 40px 10%;
     }
+
     #main #subscribe-header .ui.message {
         flex-direction: column;
     }
+
     .ui.message > .icon {
         margin-right: 0;
         margin-bottom: 20px;
     }
+
     .ui.icon.message .icon:not(.close) + .content {
         text-align: center;
     }
+
     .ui.form .inline.fields .wide.field {
         display: block;
         margin-top: 10px;
         justify-content: center;
     }
+
     .ui.card:not(.featured):not(.author) .extra.content {
-        display: none;
+        /*display: none;*/
     }
 }
