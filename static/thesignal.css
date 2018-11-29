@@ -1131,4 +1131,12 @@ body > * {
         width: auto;
         align-self: center;
     }
+
+    .team-photos-container {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        align-content: center;
+    }
+
 }
