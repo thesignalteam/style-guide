@@ -82,7 +82,6 @@ body > * {
     margin-bottom: 30px;
 }
 
-
 #header {
     padding: 20px 5% 20px 5%;
 
@@ -175,7 +174,6 @@ body > * {
 
     margin-right: 8px;
 }
-
 
 .ui.link.card {
     border-radius: 16px;
@@ -313,7 +311,6 @@ body > * {
     margin-left: -10px;
     margin-top: -10px;
 }
-
 
 .ui.card:not(.featured) .content .header:not(.ui) {
     font-size: 20px !important;
@@ -945,7 +942,6 @@ body > * {
     margin-bottom: 20px;
 }
 
-
 /* Footer */
 
 .site-footer {
@@ -1091,4 +1087,56 @@ body > * {
     .ui.card:not(.featured):not(.author) .extra.content {
         /*display: none;*/
     }
+}
+
+
+/*====================================================
+	Fixed About mobile
+====================================================*/
+
+@media only screen and (max-width: 850px) {
+    #about-mission {
+        flex-direction: column;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 100%;
+    }
+
+    #about-mission-statement {
+        width: 100%;
+        margin-top: -10px;
+        padding-top: 0;
+    }
+
+    #about-mission-header{
+        width: auto;
+        align-self: center;
+    }
+
+    #about-faq {
+        flex-direction: column;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 100%;
+    }
+
+    #about-faq-text {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: -26px;
+    }
+
+    #about-faq-title {
+        width: auto;
+        align-self: center;
+    }
+
+    .team-photos-container {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        align-content: center;
+    }
+
 }
