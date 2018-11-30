@@ -1134,7 +1134,7 @@ body > * {
 
 
 /*====================================================
-	Fixed About mobile
+	Fixed About + Project mobile
 ====================================================*/
 
 @media only screen and (max-width: 850px) {
@@ -1184,4 +1184,23 @@ body > * {
         align-content: center;
     }
 
+    #project-item {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    #project-header {
+        margin-bottom: 10px;
+        width: 100% !important;
+    }
+
+    #project-image {
+        width: 100% !important;
+        align-self: center;
+    }
+
+    #project-text {
+        margin-top: -40px !important;
+        width: 100% !important;
+    }
 }
