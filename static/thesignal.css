@@ -1143,13 +1143,15 @@ body > * {
     }
 
     #about-mission-statement {
-        width: 100%;
+        width: 100% !important;
         margin-top: -10px;
         padding-top: 0;
     }
 
-    #about-mission-header {
+    #about-mission-header{
         width: auto;
+        margin: 0;
+        padding: 0;
         align-self: center;
     }
 
@@ -1161,20 +1163,20 @@ body > * {
     }
 
     #about-faq-text {
-        width: 100%;
+        width: 100% !important;
         padding-left: 10px;
         padding-right: 10px;
         margin-top: -26px;
     }
 
-    #about-faq-title {
+    #about-faq-header {
         width: auto;
         align-self: center;
     }
 
     .team-photos-container {
         justify-content: center;
-        flex-direction: column;
+        flex-direction: column !important;
         width: 100%;
         align-content: center;
     }
