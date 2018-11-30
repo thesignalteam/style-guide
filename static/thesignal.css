@@ -515,11 +515,12 @@ body > * {
 /* Buttons and forms */
 
 .ui.basic.secondary.button {
-    outline: none;
+    /*outline: none;*/
     box-shadow: none !important;
 
-    border: 2px solid transparent;
-    border-image: linear-gradient(0, #EBEBEB 0%, rgb(252, 236, 188) 100%);
+    border-style: solid;
+    border-width: 2px;
+    border-image-source: linear-gradient(0, #EBEBEB 0%, #FCECBC 100%);
     border-image-slice: 1;
 
     font-weight: bold;
@@ -530,16 +531,12 @@ body > * {
     outline: none;
     box-shadow: none !important;
 
-    border: 2px solid transparent;
-    border-image: linear-gradient(0, #EBEBEB 0%, rgb(252, 236, 188) 100%);
-    border-image-slice: 1;
-
     background-color: rgba(252, 236, 188, 0.2) !important;
 }
 
 .ui.form input[type="text"] {
-    border: 2px solid transparent;
-    border-image: linear-gradient(0, #EBEBEB 0%, #FCECBC 100%);
+    border-width: 2px;
+    border-image-source: linear-gradient(0, #EBEBEB 0%, #FCECBC 100%);
     border-image-slice: 1;
 }
 
