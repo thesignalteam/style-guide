@@ -1097,21 +1097,22 @@ body > * {
 @media only screen and (max-width: 850px) {
     #about-mission {
         flex-direction: column;
-        padding-left: 5px;
-        padding-right: 5px;
         width: 100%;
     }
 
     #about-mission-statement {
-        width: 100%;
+        width: 100% !important;
         margin-top: -10px;
         padding-top: 0;
     }
 
     #about-mission-header{
-        width: auto;
+        width: auto !important;
+        margin: 0;
+        padding: 0;
         align-self: center;
     }
+
 
     #about-faq {
         flex-direction: column;
