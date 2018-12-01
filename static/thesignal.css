@@ -1290,9 +1290,8 @@ body > * {
         padding-right: 0 !important;
         overflow: visible;
     }
-
-    .ui.grid.extra.content > .row > .eight.wide.column > .column > .ui.link.card {
-        height: 500px;
-        overflow: visible;
-    }
+}
+.ui.grid.extra.content > .row > .eight.wide.column > .column > .ui.link.card {
+    height: 500px;
+    overflow: visible;
 }
