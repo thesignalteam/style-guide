@@ -1291,6 +1291,19 @@ body > * {
         overflow: visible;
     }
 }
+
+@media only screen and (max-width: 1000px) {
+    .ui.grid.extra.content > .row > .eight.wide.column {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        overflow: visible;
+    }
+    .ui.author.card {
+        margin-top: 0;
+    }
+}
 .ui.grid.extra.content > .row > .eight.wide.column > .column > .ui.link.card {
     height: 500px !important;
     overflow: visible;
