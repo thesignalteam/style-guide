@@ -1193,7 +1193,7 @@ body > * {
 
     #project-image {
         width: 100% !important;
-        max-width: 500px !important;
+        max-width: 400px !important;
         align-self: center;
         padding: 0 !important;
     }
