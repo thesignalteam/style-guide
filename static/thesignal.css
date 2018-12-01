@@ -1202,4 +1202,8 @@ body > * {
         margin-top: -40px !important;
         width: 100% !important;
     }
+
+    #projects-social-links{
+        padding-left: 0 !important;
+    }
 }
