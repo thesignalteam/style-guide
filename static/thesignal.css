@@ -611,6 +611,16 @@ body > * {
     margin-bottom: 10px;
 }
 
+.article .sidebar-link.selected:before {
+    content: "• ";
+    color: #2F80ED;
+    font-size: 18px;
+
+    float: left;
+    width: 15px;
+    margin-left: -15px;
+}
+
 .article #article-content .avatar {
     width: 2.5em;
     height: 2.5em;
@@ -933,7 +943,7 @@ body > * {
     font-size: 14px !important;
 }
 
-#faq .item {
+#about-faq-text .item {
     margin-top: 20px;
 
     font-size: 18px;
