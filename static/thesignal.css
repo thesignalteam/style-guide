@@ -1290,6 +1290,23 @@ body > * {
         padding-right: 0 !important;
         overflow: visible;
     }
+
+    #subscribe-widget {
+        flex-direction: column;
+    }
+    #subscribe-widget > .content > h4 {
+        margin-top: 10px;
+        padding: 0 9% 0 9%;
+    }
+    #subscribe-widget > i {
+        margin-left: 20px;
+        height: 50px;
+    }
+    #subscribe-widget > i {
+        margin-left: 20px;
+        height: 50px;
+        margin-top: 100px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1302,6 +1319,11 @@ body > * {
     }
     .ui.author.card {
         margin-top: 0;
+    }
+
+    #subscribe-widget {
+        max-width: 100%;
+        padding: 0 15% 0 9%;
     }
 }
 .ui.grid.extra.content > .row > .eight.wide.column > .column > .ui.link.card {
