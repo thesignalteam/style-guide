@@ -514,7 +514,7 @@ body > * {
 
 /* Buttons and forms */
 
-.ui.basic.secondary.button {
+.ui.basic.secondary.button, button {
     /*outline: none;*/
     box-shadow: none !important;
 
@@ -623,11 +623,45 @@ body > * {
 .article .post.meta {
     font-weight: bold;
 
-    margin-bottom: -40px;
+    margin-bottom: 40px;
 }
 
 .article .post.meta .label {
     margin-bottom: 5px;
+}
+
+.article table {
+    width: 100%;
+
+    counter-reset: list;
+}
+
+.article table tr td {
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.article table tr td:nth-child(1) {
+    color: transparent;
+    content: none;
+    width: 1px;
+}
+
+.article table tr td:nth-child(1)::before {
+    color: gray;
+    counter-increment: list;                 /* Increment the value of section counter by 1 */
+    content: counter(list);
+}
+
+.article table tr td span {
+    float: right;
+}
+
+.article table tr td button {
+    font-size: 12px;
+    /*border-width: 1.5px;*/
+
+    padding: 5px 10px;
 }
 
 .article .image {
@@ -667,11 +701,15 @@ body > * {
 .article h4 {
     font-size: 18px;
 
-    margin-top: 40px;
+    margin-top: 50px;
     margin-bottom: 20px;
     line-height: 140%;
 
     color: #2F80ED;
+}
+
+.article h6 {
+    margin-top: 50px;
 }
 
 .article #article-content p {
@@ -710,8 +748,8 @@ body > * {
 }
 
 .article #article-content blockquote p {
-    margin-top: 40px;
-    margin-bottom: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 
     font-style: italic;
 
@@ -735,6 +773,15 @@ body > * {
 
 .article #article-content .extra.content h3 {
     font-size: 22px;
+}
+
+.article .content p img {
+    display: block;
+    margin: 60px auto 0;
+}
+
+.article .content p em {
+    height: 100px;
 }
 
 .sidebar-link > a {
