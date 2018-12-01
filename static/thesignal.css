@@ -1245,8 +1245,8 @@ body > * {
     }
 
     #project-text {
-        margin-top: -40px !important;
-        width: 100% !important;
+        width: 90% !important;
+        margin: -40px 5% 0 5% !important;
     }
 
     #projects-social-links {
