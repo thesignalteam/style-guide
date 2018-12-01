@@ -1292,6 +1292,9 @@ body > * {
     }
 }
 .ui.grid.extra.content > .row > .eight.wide.column > .column > .ui.link.card {
-    height: 500px;
+    height: 500px !important;
     overflow: visible;
+}
+.ui.author.card {
+    height: 500px !important;
 }
