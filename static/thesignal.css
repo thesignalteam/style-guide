@@ -1278,4 +1278,13 @@ body > * {
     #sidebar-column {
         display: none;
     }
+
+    #content {
+        margin-top: -100px;
+    }
+
+    .ui.grid.extra.content > .row > .eight.wide.column {
+        flex-direction: column;
+        align-items: center;
+    }
 }
