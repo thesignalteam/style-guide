@@ -1177,7 +1177,7 @@ body > * {
 }
 
 /*====================================================
-	Fixed About + Project mobile
+	Fixed About + Project + Articles for mobile
 ====================================================*/
 
 @media only screen and (max-width: 850px) {
@@ -1224,7 +1224,12 @@ body > * {
         justify-content: center;
         flex-direction: column !important;
         width: 100%;
-        align-content: center;
+        align-content: center !important;
+        align-items: center !important;
+    }
+
+    .team-photos-container > div > h4 {
+        width: 100px;
     }
 
     #project-item {
