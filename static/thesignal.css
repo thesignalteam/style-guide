@@ -649,7 +649,7 @@ body > * {
 
 .article table tr td:nth-child(1)::before {
     color: gray;
-    counter-increment: list;                 /* Increment the value of section counter by 1 */
+    counter-increment: list; /* Increment the value of section counter by 1 */
     content: counter(list);
 }
 
@@ -1176,7 +1176,6 @@ body > * {
     }
 }
 
-
 /*====================================================
 	Fixed About + Project mobile
 ====================================================*/
@@ -1195,7 +1194,7 @@ body > * {
         padding-top: 0;
     }
 
-    #about-mission-header{
+    #about-mission-header {
         width: auto;
         margin: 0;
         padding: 0;
@@ -1250,13 +1249,30 @@ body > * {
         width: 100% !important;
     }
 
-    #projects-social-links{
+    #projects-social-links {
         padding-left: 0 !important;
     }
+
     .article li {
         font-size: 18px;
         margin-bottom: 8px;
         width: 100%;
+    }
+
+    #article-grid > .twelve.wide.column.left.aligned {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        width: 85% !important;
+    }
+
+    .ui.grid.extra.content {
+        flex-direction: column !important;
+    }
+
+    .ui.grid.extra.content > .row {
+        flex-direction: column;
     }
 }
 
