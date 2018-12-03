@@ -1239,7 +1239,11 @@ body > * {
     }
 
     .team-photos-container > div > h4 {
-        width: 100px;
+        width: auto;
+    }
+
+    .team-photos-container > .two.wide.left.aligned.column {
+        width: auto !important;
     }
 
     #project-item {
