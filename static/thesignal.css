@@ -836,6 +836,10 @@ body > * {
     font-size: 20px;
 }
 
+#projects p {
+    margin-bottom: 50px;
+}
+
 #projects .icon {
     height: 30px;
     margin: 0 -12px -12px -8px;
