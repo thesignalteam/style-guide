@@ -1,0 +1,1 @@
+Logo on dark blue backgrounds. For dark backgrounds with other hues, please refer to the next section.

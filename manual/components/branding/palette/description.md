@@ -1,0 +1,1 @@
+Choose all background and accent colors from the palette.

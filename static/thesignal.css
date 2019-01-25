@@ -736,8 +736,16 @@ body > * {
 
 .article ul, .article ol {
     list-style: none;
-    padding: 0;
+    padding: 10px 0;
     margin: 0;
+
+    font-size: 16px;
+}
+
+.article li {
+    margin-bottom: 10px;
+
+    /*width: 70%;*/
 }
 
 .article ul li {
@@ -747,7 +755,24 @@ body > * {
 
 .article ul li::before {
     content: "• ";
-    color: #2F80ED; /* or whatever color you prefer */
+    color: #2F80ED;
+}
+
+.article ol {
+    counter-reset: section;
+}
+
+.article ol li {
+    padding-left: 2em;
+    text-indent: -1.4em;
+}
+
+.article ol li::before {
+    counter-increment: section;
+    content: counter(section) ".";
+    color: #2F80ED;
+
+    margin-right: .5em;
 }
 
 .article hr {
@@ -772,13 +797,6 @@ body > * {
 
     position: absolute;
     left: 20px;
-}
-
-.article li {
-    font-size: 18px;
-    margin-bottom: 8px;
-
-    width: 70%;
 }
 
 .article #article-content .extra.content h3 {
@@ -1023,13 +1041,26 @@ body > * {
     margin-bottom: 10px;
 }
 
+.search.result {
+    margin: 10px -15px;
+
+    padding: 15px;
+    border-radius: 10px;
+
+    transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.search.result:hover {
+    background-color: #F0F0F0;
+}
+
 .search.result > a {
     color: initial;
     text-decoration: none;
 }
 
 .search.result .title {
-    margin-top: 40px;
+    margin-top: 10px;
 
     font-size: 20px;
 }
@@ -1040,7 +1071,7 @@ body > * {
     font-weight: bold;
     color: grey;
 
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* Footer */
@@ -1051,6 +1082,10 @@ body > * {
 }
 
 /* Astrum */
+
+.ndpl-component__description {
+    margin-bottom: 20px;
+}
 
 .ndpl-component__container .article .sticky.left {
     position: absolute;
@@ -1136,6 +1171,21 @@ body > * {
 .ui.card.featured .content .description {
     position: relative;
     top: 10px;
+}
+
+.ui.modal {
+    border-radius: 20px;
+
+    padding: 10px;
+}
+.ui.modal > :first-child:not(.icon) {
+    border: none;
+    border-radius: 20px;
+}
+
+.ui.modal > :last-child {
+    border: none;
+    border-radius: 20px;
 }
 
 @media only screen and (max-width: 650px) {

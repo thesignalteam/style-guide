@@ -1,0 +1,1 @@
+Logo on white or light backgrounds.

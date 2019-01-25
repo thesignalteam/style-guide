@@ -1,0 +1,1 @@
+Do NOT change the relative size or spacing between the signal tower and text. Lockups on dark backgrounds should be avoided altogether.

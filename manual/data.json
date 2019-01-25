@@ -68,6 +68,16 @@
                     "group": "branding",
                     "name": "name",
                     "title": "Name",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "branding",
+                    "name": "typography",
+                    "title": "Typography",
+                    "width": "half",
                     "options": {
                         "disable_code_sample": true
                     }
@@ -75,17 +85,38 @@
                 {
                     "group": "branding",
                     "name": "logo",
-                    "title": "Logo"
+                    "title": "Logo",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "branding",
+                    "name": "logo_onblue",
+                    "title": "Logo (Against Blue Background)",
+                    "width": "half",
+                    "options": {
+                        "sample_dark_background": true,
+                        "sample_background_color": "#08295E",
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "branding",
+                    "name": "logo_ondark",
+                    "title": "Logo (Inverted)",
+                    "width": "half",
+                    "options": {
+                        "sample_dark_background": true,
+                        "disable_code_sample": true
+                    }
                 },
                 {
                     "group": "branding",
                     "name": "lockup",
-                    "title": "Lockup"
-                },
-                {
-                    "group": "branding",
-                    "name": "typography",
-                    "title": "Typography",
+                    "title": "Lockup",
+                    "width": "half",
                     "options": {
                         "disable_code_sample": true
                     }
@@ -93,7 +124,13 @@
                 {
                     "group": "branding",
                     "name": "palette",
-                    "title": "Color Palette"
+                    "title": "Color Palette",
+                    "type": "colors",
+                    "colors": [
+                        "#08295E, #2F80ED, #51C7E3",
+                        "#E1B729, #FFE640, #FCECBC",
+                        "#000000, #808080, #DDDDDD"
+                    ]
                 }
             ]
         },
@@ -147,36 +184,26 @@
                     "title": "Quotes",
                     "width": "half",
                     "options": {
-                        "disable_code_sample": true
+                        "disable_code_sample": false
                     }
                 }
             ]
         },
         {
-            "name": "design",
-            "title": "Design",
+            "name": "geometry",
+            "title": "Geometry",
             "components": [
                 {
-                    "group": "design",
+                    "group": "geometry",
                     "name": "shape",
                     "title": "Shape",
                     "width": "half"
                 },
                 {
-                    "group": "design",
-                    "name": "shadow",
-                    "title": "Shadow",
-                    "width": "half"
-                },
-                {
-                    "group": "design",
+                    "group": "geometry",
                     "name": "animations",
-                    "title": "Animations"
-                },
-                {
-                    "group": "design",
-                    "name": "photography",
-                    "title": "Photography"
+                    "title": "Animation",
+                    "width": "half"
                 }
             ]
         },
@@ -203,17 +230,11 @@
                 },
                 {
                     "group": "web",
-                    "name": "social",
-                    "title": "Social Media",
-                    "width": "half"
-                },
-                {
-                    "group": "web",
                     "name": "cards",
                     "title": "Cards"
                 }
             ]
         }
     ],
-    "version": "1.9.5"
+    "version": "1.1.0"
 }
